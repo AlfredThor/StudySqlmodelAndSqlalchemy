@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker,scoped_session, declarative_base
 
 
-PGSQL_URL= 'postgresql://postgres:Admin911$@47.106.35.207:5433/chemy'
+PGSQL_URL= 'postgresql://username:password@host:port/databasename'
 
 # 声明ORM基类（这个基类的子类会自动和数据库表进行关联）
 Base = declarative_base()

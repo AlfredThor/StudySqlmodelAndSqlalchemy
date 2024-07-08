@@ -1,7 +1,7 @@
 from sqlmodel import create_engine, SQLModel
 
 
-PGSQL_URL = 'postgresql://postgres:Admin911$@47.106.35.207:5433/sqlmodel'
+PGSQL_URL = 'postgresql://username:password@host:port/databasename'
 engine = create_engine(PGSQL_URL)
 
 

@@ -87,41 +87,30 @@ def sqlalchemy_main():
     print(query['pagination'])
 
     print(datetime.now() - start_time)
-    # lists = [{'first_name': '侯启胜'+str(i), 'last_name': 'Jane'+str(i), 'age': i} for i in range(92)]
-    # add = option.create_({
-    #     'curd': lists,
-    #     'is_commit': True,
-    # })
+
+    # add = option.create_({'curd':{'first_name': 'alfred', 'last_name': 'Thor', 'age': 19}, 'is_commit': True})
     # print(add)
 
-    # update = option.update_({
-    #     'query': {'id': 1},
-    #     'curd': [
-    #         {'id': 2, 'first_name': '侯启胜'},
-    #         {'id': 3, 'first_name': '侯启胜'},
-    #         {'id': 4, 'first_name': '侯启胜'},
-    #         {'id': 5, 'first_name': '侯启胜'},
-    #         {'id': 6, 'first_name': '侯启胜'},
-    #         {'id': 16, 'first_name': '侯启胜'},
-    #     ],
-    #     'is_commit': True,
-    # })
+    # lists = [{'first_name': '侯启胜'+str(i), 'last_name': 'Jane'+str(i), 'age': i} for i in range(92)]
+    # list_add = option.create_({'curd': lists,'is_commit': True})
+    # print(list_add)
+
+    # update = option.update_({'query': {'id':117}, 'curd': {'first_name': '侯启胜'}, 'is_commit':True})
     # print(update)
 
-    # del_ = option.remove_({
-    #     'curd': [
-    #         {'id': 13},
-    #         {'id': 14, 'first_name': 'Ella1'},
-    #         {'id': 15},
-    #     ],
-    #     'is_commit': True
-    # })
+    # list_update = option.update_({'curd': [{'id': int(x), 'first_name': '侯启胜'+str(x)} for x in range(87, 100)],'is_commit': True})
+    # print(list_update)
+
+    # list_del_ = option.remove_({'curd': [{'id': 13},{'id': 14, 'first_name': 'Ella1'},{'id': 15},],'is_commit': True})
+    # print(list_del_)
+
+    # del_ = option.remove_({'curd': {'id':101}, 'is_commit': True})
     # print(del_)
 
 
 if __name__ == "__main__":
     # Sqlmodel
-    sql_model_main()
+    # sql_model_main()
 
     # Sqlalchemy
-    # sqlalchemy_main()
+    sqlalchemy_main()

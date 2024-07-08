@@ -242,6 +242,7 @@ class Base_curd:
                     return {'code': 200, 'message': '删除成功!'}
                 else:
                     return {'code': 404, 'message': '查询不到要删除的数据!'}
+
         except Exception as error:
             self.db.rollback()
             logger.info(f'删除数据错误! 模型: {self.model} 数据: {info} 报错信息: {error}')
